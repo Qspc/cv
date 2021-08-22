@@ -76,8 +76,6 @@ html {
 }
 
 
-
-
 /* menu button style */
 .menu-btn{
     color: white;
@@ -120,11 +118,9 @@ html {
     min-height : 500px;
     font-family: 'ubuntu',sans-serif;
 }
-
 .home .max-width{
     margin: auto 0 auto 100px;
 }
-
 .home .content .text-1{
     font-size: 27px;
 }
@@ -136,9 +132,23 @@ html {
     font-size: 40px;
     margin: 50x 0;
 }
-.home .content .text-3 span{
+.home .content .text-3 .typing{
     color: crimson;
     font-weight: 500;
+}
+.home .content .text-3 .garis{
+    display: inline-block;
+    width: 3px;
+    background-color: white;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0% { background-color: white;}
+    49% { background-color: white;}
+    50% { background-color: transparent;}
+    99% { background-color: transparent;}
+    100% { background-color: white;}
 }
 .home .content a{
     display: inline-block;
@@ -155,9 +165,6 @@ html {
     color: white;
     background: none;
 }
-
-
-
 
 
 

@@ -1,3 +1,4 @@
+// efek navbar scroll
 const header = document.querySelector('.navbar');
 
 window.onscroll = function () {
@@ -9,6 +10,41 @@ window.onscroll = function () {
     header.classList.remove('sticky');
   }
 };
+
+// efek typing pada home
+const typing = document.querySelector('.typing');
+const ListArray = ['Information Enthusiast', 'Agent Moslem', 'Fullstack Developer'];
+const time = 100;
+let arrayIndex = 0;
+let charIndex = 0;
+
+function type() {
+  if (charIndex < ListArray[arrayIndex].length) {
+    typing.textContent += ListArray[arrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, time);
+  } else {
+    setTimeout(erase, time);
+  }
+}
+function erase() {
+  if (charIndex > 0) {
+    typing.textContent += ListArray[arrayIndex].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(erase, time - 50);
+  } else {
+    arrayIndex++;
+    if (arrayIndex >= ListArray.length) {
+      arrayIndex = 0;
+    }
+    setTimeout(type, time);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  type(type, time + 2000);
+  erase(erase, time);
+});
 
 // $(document).ready(function(){
 //     $(window).scroll(function () {
