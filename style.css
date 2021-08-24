@@ -112,7 +112,7 @@ html {
 /* home section style */
 .home{
     display: flex;
-    background: url("section.jpg") no-repeat center;
+    background: url("night.jpg") no-repeat center;
     color: white;
     height: 100vh;
     min-height : 500px;

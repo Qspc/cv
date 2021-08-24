@@ -24,12 +24,12 @@ function type() {
     charIndex++;
     setTimeout(type, time);
   } else {
-    setTimeout(erase, time);
+    setTimeout(erase, time + 2000);
   }
 }
 function erase() {
   if (charIndex > 0) {
-    typing.textContent += ListArray[arrayIndex].substring(0, charIndex - 1);
+    typing.textContent = ListArray[arrayIndex].substring(0, charIndex - 1);
     charIndex--;
     setTimeout(erase, time - 50);
   } else {
@@ -37,13 +37,12 @@ function erase() {
     if (arrayIndex >= ListArray.length) {
       arrayIndex = 0;
     }
-    setTimeout(type, time);
+    setTimeout(type, time + 1000);
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
   type(type, time + 2000);
-  erase(erase, time);
 });
 
 // $(document).ready(function(){
