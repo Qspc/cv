@@ -1,13 +1,16 @@
-// efek navbar scroll
+// efek navbar scroll + button auto scroll atas
 const header = document.querySelector('.navbar');
+const naik = document.querySelector('.kotak');
 
 window.onscroll = function () {
   var top = window.scrollY;
   console.log(top);
   if (top >= 100) {
     header.classList.add('sticky');
+    naik.classList.add('scroll');
   } else {
     header.classList.remove('sticky');
+    naik.classList.remove('scroll');
   }
 };
 
