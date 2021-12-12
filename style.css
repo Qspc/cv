@@ -436,16 +436,16 @@ section{
     background: crimson;
 }
 .skills .skills-content .right .html::before{
-    width: 90%;
-}
-.skills .skills-content .right .css::before{
     width: 70%;
 }
+.skills .skills-content .right .css::before{
+    width: 90%;
+}
 .skills .skills-content .right .js::before{
-    width: 50%;
+    width: 90%;
 }
 .skills .skills-content .right .php::before{
-    width: 30%;
+    width: 70%;
 }
 
 

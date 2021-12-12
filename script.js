@@ -16,7 +16,7 @@ window.onscroll = function () {
 
 // efek typing pada home
 const typing = document.querySelector('.typing');
-const ListArray = ['Information Enthusiast', 'Agent Moslem', 'Fullstack Developer'];
+const ListArray = ['Information Enthusiast', 'Agent Moslem', 'Frontend Developer'];
 const time = 100;
 let arrayIndex = 0;
 let charIndex = 0;
