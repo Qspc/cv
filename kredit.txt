@@ -1,0 +1,3 @@
+- isi deskripsi bagian skill & personality
+- social media pake logo bagus, hover
+- carousel 

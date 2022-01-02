@@ -70,6 +70,9 @@ html {
 .navbar .menu li a:hover{
     color: crimson;
 }
+.navbar.sticky .menu li a:hover{
+    color: black;
+}
 .navbar.sticky .logo a:hover {
     transition: color 0.3s ease;
     color: white;    
@@ -223,7 +226,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-
+    margin-right: 20px;
 }
 .about .max-width .about-content .left{
     width: 45%;
@@ -238,7 +241,6 @@ section{
 }
 .about .about-content .right{
     width: 55%;
-
 }
 .about .about-content .right .text{
     font-size: 35px;
@@ -250,6 +252,7 @@ section{
 }
 .about .about-content .right p{
     text-align: justify;
+    line-height: 30px;
 }
 .about .about-content .right a{
     display: inline-block;
@@ -310,6 +313,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-right: 20px;
 
 }
 .services .serv-content .card{
@@ -377,6 +381,7 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    margin-right: 20px;
 }
 .skills .skills-content .left{
     width: calc(50% - 30px);
@@ -391,6 +396,7 @@ section{
 }
 .skills .skills-content .left p{
     text-align: justify;
+    line-height: 30px;
 }
 .skills .skills-content .left a{
     display: inline-block;
@@ -590,7 +596,10 @@ section{
 .contact .contact-content .left .logo{
     margin: 10px 5px;
     display: inline-block;
-
+    filter: rgb(60, 0, 0);
+}
+.contact .contact-content .left .logo a hsv:hover #instagram{
+    fill: crimson;
 }
 .contact .contact-content .row {
     display: flex;
