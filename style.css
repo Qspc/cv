@@ -822,7 +822,7 @@ body {
     display: flex;
     grid-gap: 1em;
     overflow: hidden;
-    width: 55em;
+    width: 78em;
 }
 
 .inner {
@@ -834,19 +834,25 @@ body {
 .card {
     border-radius: 0.5em;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-    background-color: crimson;
+    /* background-color: crimson; */
+    /* display: flex;
+    flex-direction: column; */
 }
 .card img {
+    /* display: flex; */
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     display: block;
-    width: 17.5em;
+    object-fit:cover;
+    width: 25em;
+    height: 15em;
 }
 .card .content {
-    background: $cardBlue;
+    /* display: flex; */
+    background: crimson;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
-    padding: 1em;
+    padding: 0.5em;
     text-align: center;
 }
 .card .content h1 {
@@ -855,9 +861,15 @@ body {
     font-size: 1.25rem;
     line-height: 1;
     }
-.card .content h3 {
+.card .content h5 {
     margin: 0.35em 0;
     color: #ccc;
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.card .content h3 {
+    margin: 0.35em 0;
+    color: white;
     font-size: 0.9rem;
     font-weight: 300;
 }

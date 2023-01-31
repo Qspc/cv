@@ -14,3 +14,10 @@ projek :
 - rpmangga
 - chat design
 -
+
+# yg masih kurang
+
+- isi bagian skill
+- konten projek
+- efek hover logo
+- setting pesan masukan, ganti sama?
