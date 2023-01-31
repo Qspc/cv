@@ -788,15 +788,15 @@ footer span a:hover{
 }
 
 /* carousel */
-@mixin circle($i) {
+/* @mixin circle($i) {
   border-radius: 100%;
   height: $i;
   width: $i;
-}
+} */
 
-$bgBlue: #001d38;
+/* $bgBlue: #001d38;
 $cardBlue: #0a2640;
-$font: "Poppins";
+$font: "Poppins"; */
 
 /* html,
 body {
@@ -809,88 +809,83 @@ body {
   overflow: hidden;
 } */
 
-.carousel {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: center;
+.center {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
 }
 
 .wrapper {
-  align-items: center;
-  display: flex;
-  grid-gap: 1em;
-  overflow: hidden;
-  width: 55em;
+    align-items: center;
+    display: flex;
+    grid-gap: 1em;
+    overflow: hidden;
+    width: 55em;
 }
 
 .inner {
     display: flex;
     grid-gap: 1em;
     transition: all 1s ease-in-out;
-  }
+}
 
 .card {
-  border-radius: 0.5em;
-  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
-
-  & > img {
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    background-color: crimson;
+}
+.card img {
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     display: block;
     width: 17.5em;
-  }
-
-  & > .content {
+}
+.card .content {
     background: $cardBlue;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
     text-align: center;
-
-    & > h1,
-    & > h3 {
-      margin: 0.35em 0;
+}
+.card .content h1 {
+    margin: 0.35em 0;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
     }
-
-    & > h1 {
-      color: #fff;
-      font-size: 1.25rem;
-      line-height: 1;
-    }
-
-    & > h3 {
-      color: #ccc;
-      font-size: 0.9rem;
-      font-weight: 300;
-    }
-  }
+.card .content h3 {
+    margin: 0.35em 0;
+    color: #ccc;
+    font-size: 0.9rem;
+    font-weight: 300;
 }
 
 .map {
-  margin-top: 1em;
-  & > button {
+    margin-top: 1em;
+}
+.map button {
     all: unset;
-    background: lighten($cardBlue, 10);
+    background: white;
     cursor: pointer;
     margin: 0 0.125em;
     position: relative;
     user-select: none;
-    @include circle(1em);
-
-    &.active {
-      &:after {
-        background: $bgBlue;
-        content: "";
-        left: 50%;
-        position: absolute;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        @include circle(0.5em);
-      }
-    }
-  }
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
+}
+.map .active {
+    background: crimson;
+    content: "";
+    /* left: 50%; */
+    position: relative;
+    /* transform: translate(-50%, -50%); */
+    top: 50%;
+    border-radius: 100%;
+    height: 1em;
+    width: 1em;
 }
 
 
