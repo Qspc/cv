@@ -313,6 +313,7 @@ section {
 }
 .services .serv-content .card {
   width: calc(33% - 20px);
+  min-height: 170px;
   background: rgb(44, 39, 39);
   text-align: center;
   border-radius: 6px;
@@ -434,16 +435,16 @@ section {
   background: crimson;
 }
 .skills .skills-content .right .html::before {
-  width: 90%;
-}
-.skills .skills-content .right .css::before {
-  width: 80%;
-}
-.skills .skills-content .right .js::before {
   width: 75%;
 }
-.skills .skills-content .right .php::before {
+.skills .skills-content .right .css::before {
+  width: 85%;
+}
+.skills .skills-content .right .js::before {
   width: 80%;
+}
+.skills .skills-content .right .php::before {
+  width: 70%;
 }
 
 /* teams style */
