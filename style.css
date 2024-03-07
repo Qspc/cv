@@ -314,6 +314,7 @@ section {
 .services .serv-content .card {
   width: calc(33% - 20px);
   min-height: 170px;
+  display: flex;
   background: rgb(44, 39, 39);
   text-align: center;
   border-radius: 6px;
@@ -324,15 +325,25 @@ section {
   background: crimson;
 }
 .services .serv-content .card .box {
+  justify-content: start;
+  align-items: center;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  gap: 10px;
 }
 .services .serv-content .card:hover .box {
   transform: scale(1.05);
 }
-.services .serv-content .card .text {
+.services .serv-content .card .box .text {
   font-size: 25px;
   font-weight: 600;
-  margin: 10px 0 7px 0;
+  height: 25%;
+}
+.services .serv-content .card .box p {
+  height: 75%;
+  text-align: center;
 }
 
 /* skills style */

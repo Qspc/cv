@@ -4,7 +4,7 @@ const naik = document.querySelector('.kotak');
 
 window.onscroll = function () {
   var top = window.scrollY;
-  console.log(top);
+  // console.log(top);
   if (top >= 100) {
     header.classList.add('sticky');
     naik.classList.add('scroll');
