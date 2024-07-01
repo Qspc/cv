@@ -117,10 +117,13 @@ buttonsWrapper.addEventListener('click', (e) => {
       slides.style.transform = 'translateX(-0%)';
       e.target.classList.add('active');
     } else if (e.target.classList.contains('second')) {
-      slides.style.transform = 'translateX(-33.33333333333333%)';
+      slides.style.transform = 'translateX(-25%)';
       e.target.classList.add('active');
     } else if (e.target.classList.contains('third')) {
-      slides.style.transform = 'translatex(-66.6666666667%)';
+      slides.style.transform = 'translatex(-50%)';
+      e.target.classList.add('active');
+    } else if (e.target.classList.contains('fourth')) {
+      slides.style.transform = 'translatex(-75%)';
       e.target.classList.add('active');
     }
   }
